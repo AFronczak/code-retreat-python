@@ -1,9 +1,13 @@
 import unittest
+from gamey import hello
 
 class TestStringMethods(unittest.TestCase):
 
     def test_add(self):
         self.assertEqual(3, 2+1)
+
+    def test_hello(self):
+        self.assertEqual(hello(), "hi")
 
     def test_upper(self):
         self.assertEqual('foo'.upper(), 'FOO')
