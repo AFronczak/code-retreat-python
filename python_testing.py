@@ -1,5 +1,5 @@
 import unittest
-from gamey import hello
+from gamey import hello, numbers
 
 class TestStringMethods(unittest.TestCase):
 
@@ -8,6 +8,9 @@ class TestStringMethods(unittest.TestCase):
 
     def test_hello(self):
         self.assertEqual(hello(), "hi")
+
+    def test_numbers(self):
+        self.assertEqual(numbers(), 5)
 
     def test_upper(self):
         self.assertEqual('foo'.upper(), 'FOO')
